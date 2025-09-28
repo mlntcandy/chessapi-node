@@ -1,7 +1,7 @@
 #define NAPI_VERSION 6
 #include <node_api.h>
 
-#include "chessapi/chessapi.h"
+#include "chessapi/src/c/chessapi.h"
 
 // deescalate back to js code asap, an exception is pending already
 #define assert_or_null(ex) \
