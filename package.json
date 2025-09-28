@@ -1,0 +1,19 @@
+{
+    "name": "chessapi-node",
+    "version": "1.0.0",
+    "author": "mlntcandy",
+    "description": "Node bindings for shiro-nya/2025-chess-bot-tournament",
+    "exports": {
+        ".": "./js/index.js"
+    },
+    "types": "./js/index.d.ts",
+    "type": "commonjs",
+    "scripts": {
+        "example": "node example.js",
+        "install": "cmake-js compile"
+    },
+    "dependencies": {
+        "cmake-js": "^7.3.1",
+        "bindings": "^1.5.0"
+    }
+}
