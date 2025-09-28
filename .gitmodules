@@ -1,3 +1,0 @@
-[submodule "src/chessapi"]
-	path = src/chessapi
-	url = https://github.com/shiro-nya/2025-chess-bot-tournament
