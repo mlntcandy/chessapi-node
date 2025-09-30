@@ -37,3 +37,7 @@ while (true) {
 add engine to cutechess, set command to `<node-executable-path> <script-path>`. wrap both in quotes on windows
 
 your script will just be a uci engine - you can also run that however else you like
+
+### quirks
+
+- for some reason objects created natively seem to be lazily evaluated so `console.log(obj)` returns `{}`, don't panic the properties are there

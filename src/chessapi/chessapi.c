@@ -2083,14 +2083,14 @@ static bool is_threefold_draw(Board *board)
                 counts = (int *)realloc(counts, max_size * sizeof(int));
             }
             boards[cur_size] = cur_board;
-            counts[cur_size] = 0;
+            counts[cur_size] = 1;
             cur_size++;
         }
         cur_board = cur_board->last_board;
     }
     free(boards);
     free(counts);
-    if (!hit)
+    if (!found)
         return false;
     return true;
 }
